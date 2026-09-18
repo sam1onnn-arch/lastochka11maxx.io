@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ЛаСТОчка11 — ремонт авто и мото в Сыктывкаре</title>
+<meta name="description" content="Автосервис ЛаСТОчка11, Сыктывкар, ул. Школьная, 51. Ремонт авто и мото, снегоходов и квадроциклов: диагностика, подвеска, электрика, ТО. Берёмся за любую работу — от лампочки до двигателя.">
+<meta name="theme-color" content="#F2EBE3">
+
+<!-- TODO: заменить lastochka11.ru на реальный домен (canonical, og:url, og:image, разметка) -->
+<link rel="canonical" href="https://lastochka11.ru/">
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="ЛаСТОчка11">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="ЛаСТОчка11 — ремонт авто и мото в Сыктывкаре">
+<meta property="og:description" content="Школьная, 51. Берёмся за любую работу — от лампочки до двигателя. Заезжай ползком, уезжай летя.">
+<meta property="og:url" content="https://lastochka11.ru/">
+<meta property="og:image" content="https://lastochka11.ru/assets/img/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geologica:wght@400..900&family=Onest:wght@400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "ЛаСТОчка11",
+  "legalName": "ИП Игнатов Андрей Иванович",
+  "taxID": "111801015183",
+  "description": "Автосервис в Сыктывкаре: ремонт автомобилей и мототехники, диагностика, подвеска, тормоза, автоэлектрика, техобслуживание.",
+  "url": "https://lastochka11.ru/",
+  "image": "https://lastochka11.ru/assets/img/og-cover.jpg",
+  "telephone": ["+79042723147", "+78212352000"],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "улица Школьная, 51",
+    "addressLocality": "Сыктывкар",
+    "addressRegion": "Республика Коми",
+    "addressCountry": "RU"
+  },
+  "areaServed": { "@type": "City", "name": "Сыктывкар" },
+  "sameAs": ["https://vk.com/lastochkasto"],
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "19:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "16:00" }
+  ]
+}
+</script>
+<!-- TODO: график работы здесь, в секции «Контакты», в подвале и в assets/js/main.js (HOURS) — менять вместе -->
+</head>
+<body>
+
+<!-- Значки. Объявлены один раз, дальше подставляются через <use> -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="logoMark" viewBox="0 0 1254 1254">
+    <path fill="currentColor" fill-rule="evenodd" d="M 1085 447 C 1085 447 1085 449 1085 449 C 1085 449 1051 460 1051 460 C 1051 460 1045.17 469.33 1037 476 C 1028.83 482.67 1014.17 489.33 1002 500 C 989.83 510.67 975.83 529.5 964 540 C 952.17 550.5 947 554.17 931 563 C 915 571.83 885.67 585.83 868 593 C 850.33 600.17 841 602.17 825 606 C 809 609.83 786.67 611.83 772 616 C 757.33 620.17 776.17 607.5 737 631 C 697.83 654.5 589.67 723.17 537 757 C 484.33 790.83 421 834 421 834 C 421 834 419 833 419 833 C 419 833 415.17 835.17 441 811 C 466.83 786.83 543.17 717.5 574 688 C 604.83 658.5 615 646 626 634 C 637 622 640 616 640 616 C 640 616 560.5 626.17 506 636 C 451.5 645.83 313 675 313 675 C 313 675 313.67 672 352 660 C 390.33 648 497.5 617.17 543 603 C 588.5 588.83 601.83 584.33 625 575 C 648.17 565.67 668.67 554.5 682 547 C 695.33 539.5 698.17 536 705 530 C 711.83 524 723 511 723 511 C 723 511 708 499 708 499 C 708 499 708 489 708 489 C 708 489 712 484 712 484 C 712 484 702 482 702 482 C 702 482 694 475 694 475 C 694 475 692 466 692 466 C 692 466 695 459 695 459 C 695 459 688.33 458.67 685 457 C 681.67 455.33 677 451 675 449 C 673 447 673 445 673 445 C 673 445 674 432 674 432 C 674 432 660.5 431.17 656 430 C 651.5 428.83 649.5 427.17 647 425 C 644.5 422.83 641 417 641 417 C 641 417 641 407 641 407 C 641 407 633.17 408 628 407 C 622.83 406 610 401 610 401 C 610 401 602 392 602 392 C 602 392 602 383 602 383 C 602 383 593.17 383.83 588 383 C 582.83 382.17 571 378 571 378 C 571 378 565 372 565 372 C 565 372 563 362 563 362 C 563 362 551.17 362.17 546 361 C 540.83 359.83 535.17 357 532 355 C 528.83 353 527 349 527 349 C 527 349 526 340 526 340 C 526 340 503 337 503 337 C 503 337 488 326 488 326 C 488 326 486 319 486 319 C 486 319 463 315 453 312 C 443 309 426 301 426 301 C 426 301 426 298 426 298 C 426 298 438.67 294 451 293 C 463.33 292 481 291.17 500 292 C 519 292.83 544 295.17 565 298 C 586 300.83 606 304.67 626 309 C 646 313.33 666.83 318.67 685 324 C 703.17 329.33 718 334.17 735 341 C 752 347.83 774 358.33 787 365 C 800 371.67 813 381 813 381 C 813 381 809 375 809 375 C 809 375 809 366 809 366 C 809 366 812 362 812 362 C 812 362 801 354 801 354 C 801 354 798.5 349.33 798 347 C 797.5 344.67 798 340 798 340 C 798 340 803 332 803 332 C 803 332 795 326 795 326 C 795 326 790 314 790 314 C 790 314 791 306 791 306 C 791 306 796 299 796 299 C 796 299 788.33 293.83 786 291 C 783.67 288.17 782.67 285 782 282 C 781.33 279 782 273 782 273 C 782 273 788 265 788 265 C 788 265 780.5 260.67 778 258 C 775.5 255.33 773 249 773 249 C 773 249 773 238 773 238 C 773 238 779 232 779 232 C 779 232 769 225.5 766 222 C 763 218.5 761 211 761 211 C 761 211 762 201 762 201 C 762 201 767 195 767 195 C 767 195 763 194 760 191 C 757 188 749 177 749 177 C 749 177 747 162 747 162 C 747 162 751 154 751 154 C 751 154 743.67 149 741 146 C 738.33 143 736.33 139.67 735 136 C 733.67 132.33 733 124 733 124 C 733 124 738 115 738 115 C 738 115 728.67 108 726 105 C 723.33 102 723.17 100.5 722 97 C 720.83 93.5 719 88.67 719 84 C 719 79.33 722 69 722 69 C 722 69 730 73.67 739 82 C 748 90.33 763.83 106 776 119 C 788.17 132 798 142.67 812 160 C 826 177.33 844.67 200.83 860 223 C 875.33 245.17 891.67 271.17 904 293 C 916.33 314.83 927.83 339.5 934 354 C 940.17 368.5 940.5 371.83 941 380 C 941.5 388.17 940.17 394.33 937 403 C 933.83 411.67 922 432 922 432 C 922 432 927 432.67 936 429 C 945 425.33 966.83 413.83 976 410 C 985.17 406.17 985 406.83 991 406 C 997 405.17 1003.67 403.67 1012 405 C 1020.33 406.33 1034.17 410.83 1041 414 C 1047.83 417.17 1049.83 420.5 1053 424 C 1056.17 427.5 1060 435 1060 435 C 1060 435 1085 447 1085 447 Z M 380 259 C 380 259 413 290 413 290 C 413 290 397.67 301.83 388 312 C 378.33 322.17 364.5 338.33 355 351 C 345.5 363.67 338.67 374.67 331 388 C 323.33 401.33 315.17 417.17 309 431 C 302.83 444.83 298.5 456.17 294 471 C 289.5 485.83 284.83 505.67 282 520 C 279.17 534.33 278 542.33 277 557 C 276 571.67 274.67 588.17 276 608 C 277.33 627.83 281.67 658.33 285 676 C 288.33 693.67 291.83 702 296 714 C 300.17 726 304.5 736.33 310 748 C 315.5 759.67 322 772.33 329 784 C 336 795.67 344.33 807.67 352 818 C 359.67 828.33 366.5 836.67 375 846 C 383.5 855.33 388.5 862 403 874 C 417.5 886 444.83 906.67 462 918 C 479.17 929.33 493.17 935.67 506 942 C 518.83 948.33 526.33 951.33 539 956 C 551.67 960.67 569 966.33 582 970 C 595 973.67 605.83 975.83 617 978 C 628.17 980.17 635.67 981.67 649 983 C 662.33 984.33 680.83 985.83 697 986 C 713.17 986.17 731.67 985.17 746 984 C 760.33 982.83 770.83 981.17 783 979 C 795.17 976.83 806.17 974.5 819 971 C 831.83 967.5 844 964.33 860 958 C 876 951.67 900.5 940.33 915 933 C 929.5 925.67 935.33 921.83 947 914 C 958.67 906.17 974.17 895 985 886 C 995.83 877 1012 860 1012 860 C 1012 860 1043 890 1043 890 C 1043 890 997.83 929.17 979 943 C 960.17 956.83 944.5 965 930 973 C 915.5 981 906.5 985 892 991 C 877.5 997 857.5 1004.33 843 1009 C 828.5 1013.67 818.83 1016 805 1019 C 791.17 1022 775.83 1025 760 1027 C 744.17 1029 726.83 1030.5 710 1031 C 693.17 1031.5 675.67 1031.17 659 1030 C 642.33 1028.83 626.83 1027 610 1024 C 593.17 1021 572.17 1015.83 558 1012 C 543.83 1008.17 536.17 1005.17 525 1001 C 513.83 996.83 504.33 993.33 491 987 C 477.67 980.67 458 970.5 445 963 C 432 955.5 425.33 951.17 413 942 C 400.67 932.83 383.67 919.33 371 908 C 358.33 896.67 347.83 886 337 874 C 326.17 862 315 848.17 306 836 C 297 823.83 291 815.17 283 801 C 275 786.83 264.5 765.83 258 751 C 251.5 736.17 248 725.5 244 712 C 240 698.5 236.67 685.5 234 670 C 231.33 654.5 229 635 228 619 C 227 603 227.17 589.33 228 574 C 228.83 558.67 230.5 542.67 233 527 C 235.5 511.33 239.33 494.17 243 480 C 246.67 465.83 249.83 455.83 255 442 C 260.17 428.17 263.83 416 274 397 C 284.17 378 304.5 345 316 328 C 327.5 311 332.33 306.5 343 295 C 353.67 283.5 380 259 380 259 Z M 673 711 C 673 711 674 947 674 947 C 674 947 610 948 610 948 C 610 948 610 782 610 782 C 610 782 578 800 578 800 C 578 800 578 760 578 760 C 578 760 649 711 649 711 C 649 711 673 711 673 711 Z M 1152 999 C 1152 999 1120.83 1029.17 1107 1041 C 1093.17 1052.83 1082.83 1060.33 1069 1070 C 1055.17 1079.67 1041.17 1089.17 1024 1099 C 1006.83 1108.83 988.5 1119.17 966 1129 C 943.5 1138.83 910.67 1150.83 889 1158 C 867.33 1165.17 854.17 1168 836 1172 C 817.83 1176 797.67 1179.5 780 1182 C 762.33 1184.5 753.17 1186 730 1187 C 706.83 1188 662.33 1188.33 641 1188 C 619.67 1187.67 617.67 1186.83 602 1185 C 586.33 1183.17 566.33 1180.83 547 1177 C 527.67 1173.17 506.33 1168.17 486 1162 C 465.67 1155.83 444.17 1148 425 1140 C 405.83 1132 388 1123.17 371 1114 C 354 1104.83 337 1094.17 323 1085 C 309 1075.83 300.83 1070.17 287 1059 C 273.17 1047.83 254 1031.33 240 1018 C 226 1004.67 215.17 993.17 203 979 C 190.83 964.83 178.17 948.67 167 933 C 155.83 917.33 145.67 901.67 136 885 C 126.33 868.33 116.83 850 109 833 C 101.17 816 95 800.83 89 783 C 83 765.17 77 742.67 73 726 C 69 709.33 67.17 700.33 65 683 C 62.83 665.67 60.67 641.5 60 622 C 59.33 602.5 59.5 585.83 61 566 C 62.5 546.17 65.67 522.17 69 503 C 72.33 483.83 76.17 468.33 81 451 C 85.83 433.67 90.67 417.83 98 399 C 105.33 380.17 116.33 355.5 125 338 C 133.67 320.5 140 309.67 150 294 C 160 278.33 173.83 258.67 185 244 C 196.17 229.33 202.5 221.17 217 206 C 231.5 190.83 272 153 272 153 C 272 153 275 153 275 153 C 275 153 364 242 364 242 C 364 242 364 245 364 245 C 364 245 332.83 273.33 321 286 C 309.17 298.67 302.83 307 293 321 C 283.17 335 270.67 354.67 262 370 C 253.33 385.33 247.5 397.67 241 413 C 234.5 428.33 228.33 444.17 223 462 C 217.67 479.83 212.33 501.5 209 520 C 205.67 538.5 204 555.17 203 573 C 202 590.83 202.17 610.67 203 627 C 203.83 643.33 205.33 655.67 208 671 C 210.67 686.33 215.33 705.5 219 719 C 222.67 732.5 225 739.33 230 752 C 235 764.67 240.67 779.33 249 795 C 257.33 810.67 270.67 832.17 280 846 C 289.33 859.83 293.67 865.17 305 878 C 316.33 890.83 336 911.33 348 923 C 360 934.67 362.17 937 377 948 C 391.83 959 415.83 976.83 437 989 C 458.17 1001.17 479.5 1011.67 504 1021 C 528.5 1030.33 558 1039.33 584 1045 C 610 1050.67 636.67 1053.33 660 1055 C 683.33 1056.67 704.17 1056 724 1055 C 743.83 1054 761.33 1051.83 779 1049 C 796.67 1046.17 812.17 1042.83 830 1038 C 847.83 1033.17 871.5 1025.17 886 1020 C 900.5 1014.83 902 1014.5 917 1007 C 932 999.5 957 987 976 975 C 995 963 1017.17 946.17 1031 935 C 1044.83 923.83 1059 908 1059 908 C 1059 908 1050.5 896.83 1066 912 C 1081.5 927.17 1152 999 1152 999 Z M 725 948 C 725 948 725 782 725 782 C 725 782 693 799 693 799 C 693 799 693 760 693 760 C 693 760 763 710 763 710 C 763 710 787 710 787 710 C 787 710 787 948 787 948 C 787 948 725 948 725 948 Z M 1042 437 C 1042 437 1039 432 1039 432 C 1039 432 1030 431 1030 431 C 1030 431 1027 433 1027 433 C 1027 433 1025 441 1025 441 C 1025 441 1027 445 1027 445 C 1027 445 1036 447 1036 447 C 1036 447 1041 443 1041 443 C 1041 443 1042 437 1042 437 Z"/>
+  </symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h3l1.5 4-2 1.5a11 11 0 0 0 7 7l1.5-2 4 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-spring" viewBox="0 0 24 24"><path d="M6 3h12M6 21h12M8 6l8 2-8 2 8 2-8 2 8 2-8 2"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24"><path d="M5 9h10l2 2h2V9h2v8h-2v-2h-2l-2 3H8l-2-2H5zM8 6h6M11 6v3M2 11v4M2 13h3"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4"/><path d="M12 12h9M18 12v3M21 12v2"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="5" cy="5" r="1.6"/><circle cx="12" cy="5" r="1.6"/><circle cx="19" cy="5" r="1.6"/><circle cx="5" cy="19" r="1.6"/><circle cx="12" cy="19" r="1.6"/><path d="M5 6.6v10.8M12 6.6v10.8M19 6.6V12H5"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.6 6 11a6 6 0 0 1-12 0c0-4.4 6-11 6-11z"/><path d="M9 14.5a3 3 0 0 0 3 3"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M7 7V4.5h3V7M14 7V4.5h3V7M6.5 13.5h4M14.5 13.5h4M16.5 11.5v4"/></symbol>
+  <symbol id="i-oil" viewBox="0 0 24 24"><path d="M3 10h4l1.5-2h5L19 5.5l2 1-5 7.5H8.5L7 16H3z"/><path d="M20 15.5s1.6 1.9 1.6 3.1a1.6 1.6 0 0 1-3.2 0c0-1.2 1.6-3.1 1.6-3.1z"/></symbol>
+  <symbol id="i-moto" viewBox="0 0 24 24"><circle cx="5.5" cy="16.5" r="3.5"/><circle cx="18.5" cy="16.5" r="3.5"/><path d="M5.5 16.5 9 11h6l3.5 5.5M9 11 7.5 8H5M15 11l1.6-4H19"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M8 3v4M16 3v4M3.5 10h17"/></symbol>
+  <symbol id="i-ruble" viewBox="0 0 24 24"><path d="M8 20V4h5a4 4 0 0 1 0 8H6M6 16h8"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></symbol>
+  <!-- значок «сообщение» прямоугольный: круглый пузырь с хвостиком похож на логотип WhatsApp -->
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-9l-5 4v-4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-form" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z"/><path d="M4 7.5l8 4.5 8-4.5M12 12v9"/></symbol>
+</svg>
+
+
+<!-- ─────────── ВЕРХНЯЯ ПОЛОСА · видна всегда ─────────── -->
+<header class="topbar" id="topbar">
+  <div class="wrap topbar__in">
+    <a href="#hero" class="brand" aria-label="ЛаСТОчка11 — наверх">
+      <svg class="brand__mark" aria-hidden="true"><use href="#logoMark"/></svg>
+      <span class="brand__name">ЛаСТОчка11</span>
+    </a>
+
+    <nav class="nav" aria-label="Разделы">
+      <a href="#steps">Как работаем</a>
+      <a href="#proof">Отзывы</a>
+      <a href="#fleet">Мото</a>
+      <a href="#prices">Цены</a>
+      <a href="#faq">Вопросы</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+
+    <div class="topbar__call">
+      <a class="topbar__tel" href="tel:+79042723147">+7&nbsp;(904)&nbsp;272‑31‑47</a>
+      <!-- Надпись считается по графику в assets/js/main.js -->
+      <span class="status" data-status><i></i><span>Открыто до&nbsp;19:00</span></span>
+    </div>
+
+    <button class="btn btn--line btn--sm topbar__book" type="button" data-lead>Записаться</button>
+
+    <a class="topbar__icon" href="tel:+79042723147" aria-label="Позвонить">
+      <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>
+    </a>
+    <button class="burger" id="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="drawer">
+      <i></i><i></i>
+    </button>
+  </div>
+</header>
+
+<div class="drawer" id="drawer" hidden>
+  <nav class="drawer__nav" aria-label="Разделы">
+    <a href="#trouble">Что случилось</a>
+    <a href="#steps">Как работаем</a>
+    <a href="#proof">Отзывы</a>
+    <a href="#fleet">Мото</a>
+    <a href="#prices">Цены</a>
+    <a href="#faq">Вопросы</a>
+    <a href="#contact">Контакты</a>
+  </nav>
+  <div class="drawer__foot">
+    <a class="drawer__tel" href="tel:+79042723147">+7&nbsp;(904)&nbsp;272‑31‑47</a>
+    <span class="status" data-status><i></i><span>Открыто до&nbsp;19:00</span></span>
+    <button class="btn btn--red btn--block" type="button" data-lead>Записаться</button>
+  </div>
+</div>
+
+
+<main>
+
+<!-- ═══════════ 1 · ПЕРВЫЙ ЭКРАН · даёт заявки ═══════════ -->
+<section class="hero" id="hero">
+  <div class="wrap hero__grid">
+    <!-- Верхняя строка: где мы и открыты ли сейчас — на одном уровне -->
+    <div class="hero__top">
+      <p class="status hero__status" data-status><i></i><span>Открыто до&nbsp;19:00</span></p>
+    </div>
+
+    <div class="hero__text">
+      <!-- Заголовок в две строки капсом, под ним два обещания:
+           первое крупное, второе мельче и тише -->
+      <h1 class="hero__title">
+        <span>Ремонт авто и&nbsp;мото</span>
+        <span>в&nbsp;Сыктывкаре</span>
+      </h1>
+      <p class="hero__lead">Берёмся за&nbsp;любую работу&nbsp;— от&nbsp;лампочки до&nbsp;двигателя</p>
+      <p class="hero__note">Мелочь или капремонт&nbsp;— делаем одинаково тщательно</p>
+
+      <ul class="facts">
+        <li><b>20+</b><span>лет в&nbsp;ремонте</span></li>
+        <li><b>1&nbsp;год</b><span>гарантия на&nbsp;работу</span></li>
+        <li><b>Цена</b><span>до&nbsp;начала работ</span></li>
+      </ul>
+
+      <div class="hero__actions">
+        <button class="btn btn--red" type="button" data-lead>
+          <svg class="ico" aria-hidden="true"><use href="#i-calendar"/></svg>Записаться
+        </button>
+        <a class="btn btn--dark" href="tel:+79042723147">
+          <svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить
+        </a>
+      </div>
+    </div>
+
+    <figure class="hero__cars">
+      <img src="assets/img/hero-kia-atv.jpg" width="1600" height="788"
+           alt="Kia Sportage и квадроцикл на мокром асфальте">
+      <!-- Слоган написан от руки — это картинка с прозрачным фоном,
+           стрелка рядом нарисована вектором и тянется к капоту -->
+      <figcaption class="hero__hand">
+        <img src="assets/img/hero-hand.png" width="640" height="285"
+             alt="Заезжай ползком, уезжай летя">
+        <svg class="hero__hand-arrow" viewBox="0 0 80 64" aria-hidden="true">
+          <path d="M3 5c24 3 43 17 57 41"/>
+          <path d="M44 44l17 3-4-17"/>
+        </svg>
+      </figcaption>
+    </figure>
+  </div>
+  <p class="hero__watermark" aria-hidden="true">ЛаСТОчка11</p>
+</section>
+
+<!-- ═══════════ 2 · «ЧТО У ВАС СЛУЧИЛОСЬ?» · даёт заявки ═══════════
+     Нажатие на плитку открывает заявку, неполадка в ней уже вписана
+     (текст берётся из data-lead). -->
+<section class="section trouble" id="trouble">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h2">Что у&nbsp;вас случилось?</h2>
+      <p class="head__lead">Нажмите на&nbsp;то, что происходит с&nbsp;машиной. Заявка откроется с&nbsp;уже вписанной неполадкой, и&nbsp;мастер перезвонит подготовленным.</p>
+    </div>
+
+    <ul class="tiles">
+      <li><button class="tile" type="button" data-lead="Стучит подвеска">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-spring"/></svg></span>
+        <span class="tile__name">Стучит подвеска</span>
+        <span class="tile__hint">На&nbsp;кочках, в&nbsp;поворотах, на&nbsp;«лежачих»</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Горит «чек»">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-engine"/></svg></span>
+        <span class="tile__name">Горит «чек»</span>
+        <span class="tile__hint">Жёлтый значок двигателя на&nbsp;приборке</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Не заводится">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-key"/></svg></span>
+        <span class="tile__name">Не&nbsp;заводится</span>
+        <span class="tile__hint">Крутит, но&nbsp;не&nbsp;схватывает, или молчит совсем</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Дёргается коробка">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-gear"/></svg></span>
+        <span class="tile__name">Дёргается коробка</span>
+        <span class="tile__hint">Пинки при переключении, пробуксовка</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Уходит антифриз">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-drop"/></svg></span>
+        <span class="tile__name">Уходит антифриз</span>
+        <span class="tile__hint">Бачок пустеет, пахнет сладким, пятно под&nbsp;машиной</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Пропала зарядка">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-battery"/></svg></span>
+        <span class="tile__name">Пропала зарядка</span>
+        <span class="tile__hint">Горит значок аккумулятора, садится за&nbsp;ночь</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Ест масло">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-oil"/></svg></span>
+        <span class="tile__name">Ест масло</span>
+        <span class="tile__hint">Доливаете между заменами, сизый дым из&nbsp;трубы</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+      <li><button class="tile" type="button" data-lead="Мототехника">
+        <span class="tile__top"><span class="slash" aria-hidden="true"></span><svg class="tile__ico" aria-hidden="true"><use href="#i-moto"/></svg></span>
+        <span class="tile__name">Мототехника</span>
+        <span class="tile__hint">Снегоходы, квадроциклы, скутеры</span>
+        <span class="tile__go">Оставить заявку<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+      </button></li>
+    </ul>
+
+    <p class="trouble__other">Нет вашей неполадки? <button class="link" type="button" data-lead>Опишите своими словами</button></p>
+  </div>
+</section>
+
+
+<!-- ═══════════ СЕЗОННАЯ ПОЛОСА · меняется 4 раза в год ═══════════
+     Сезон выбирается сам по дате — тексты в assets/js/main.js, объект SEASONS.
+     Здесь — осенний вариант: его видно, даже если скрипт не загрузился. -->
+<aside class="season" id="season" aria-label="Сезонное предложение">
+  <div class="wrap season__in">
+    <div class="season__text">
+      <p class="season__title" data-season="title">Проверить машину перед зимой</p>
+      <p class="season__lead" data-season="text">Аккумулятор, свечи, антифриз, тормоза и&nbsp;подвеска&nbsp;— за&nbsp;один заезд, пока не&nbsp;ударили морозы</p>
+    </div>
+    <button class="btn btn--red" type="button" data-lead="Проверка перед зимой" data-season="button">Записаться на&nbsp;проверку</button>
+  </div>
+</aside>
+
+<!-- ═══════════ 3 · КАК ЭТО УСТРОЕНО · пять шагов ═══════════
+     TODO: время и порядок оплаты на шагах сверить с мастером -->
+<section class="section steps" id="steps">
+  <div class="wrap">
+    <div class="head">
+      <h2 class="h2">Пять шагов, и&nbsp;вы заранее знаете, когда платить</h2>
+    </div>
+
+    <ol class="steps__list">
+      <li class="step">
+        <span class="step__n">1</span>
+        <h3 class="step__name">Запись</h3>
+        <p class="step__text">Звонок или заявка на&nbsp;сайте. Подбираем время, когда мастер свободен</p>
+        <p class="step__meta"><span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>2&nbsp;минуты</span><span><svg class="ico" aria-hidden="true"><use href="#i-ruble"/></svg>бесплатно</span></p>
+      </li>
+      <li class="step">
+        <span class="step__n">2</span>
+        <h3 class="step__name">Диагностика</h3>
+        <p class="step__text">Находим причину и&nbsp;показываем, что именно вышло из&nbsp;строя</p>
+        <p class="step__meta"><span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>40—60&nbsp;минут</span><span><svg class="ico" aria-hidden="true"><use href="#i-ruble"/></svg>900&nbsp;₽, зачтём в&nbsp;счёт ремонта</span></p>
+      </li>
+      <li class="step">
+        <span class="step__n">3</span>
+        <h3 class="step__name">Согласование</h3>
+        <p class="step__text">Называем цену и&nbsp;срок, делим на&nbsp;«нужно сейчас» и&nbsp;«может подождать». Решаете вы</p>
+        <p class="step__meta"><span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>5—10&nbsp;минут</span><span><svg class="ico" aria-hidden="true"><use href="#i-ruble"/></svg>бесплатно</span></p>
+      </li>
+      <li class="step">
+        <span class="step__n">4</span>
+        <h3 class="step__name">Ремонт</h3>
+        <p class="step__text">Работаем в&nbsp;рамках согласованной суммы и&nbsp;срока</p>
+        <p class="step__meta"><span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>от&nbsp;часа до&nbsp;нескольких дней</span><span><svg class="ico" aria-hidden="true"><use href="#i-ruble"/></svg>по&nbsp;согласованной смете</span></p>
+      </li>
+      <li class="step">
+        <span class="step__n">5</span>
+        <h3 class="step__name">Выдача</h3>
+        <p class="step__text">Отдаём машину и&nbsp;снятые детали, объясняем, за&nbsp;чем следить дальше</p>
+        <p class="step__meta"><span><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>15&nbsp;минут</span><span><svg class="ico" aria-hidden="true"><use href="#i-ruble"/></svg>оплата после приёмки</span></p>
+      </li>
+    </ol>
+
+    <div class="callout">
+      <svg class="callout__ico" aria-hidden="true"><use href="#i-phone"/></svg>
+      <p><b>Нашли что-то новое по&nbsp;ходу ремонта?</b> Сначала звонок, потом работа. Останавливаемся, показываем и&nbsp;ждём вашего решения&nbsp;— без «да» сумма не&nbsp;растёт.</p>
+    </div>
+    <!-- Формулировка согласована с Андреем 16.09: «без наценки» не писать -->
+    <div class="callout">
+      <svg class="callout__ico" aria-hidden="true"><use href="#i-box"/></svg>
+      <p><b>Нужны запчасти?</b> Подберём и&nbsp;закажем сами у&nbsp;проверенных поставщиков&nbsp;— с&nbsp;гарантией и&nbsp;только после согласования с&nbsp;вами.</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ═══════════ 4 · ДОКАЗАТЕЛЬСТВА ═══════════
+     Три вида доказательств: отзывы, «до и после», работы из ВК.
+     ВНИМАНИЕ: отзывы ниже — образцы, помечены на странице. Заменить на реальные
+     из 2ГИС и ВК: имя, машина, что делали, ссылка на источник. -->
+<section class="section proof" id="proof">
+  <div class="wrap">
+    <div class="head head--split">
+      <div>
+        <h2 class="h2">Отзывы, работы и&nbsp;фото из&nbsp;бокса</h2>
+      </div>
+      <!-- Рейтинг подписан честно: цифра без подписи рядом с «20+ лет» читается как обман -->
+      <a class="rating" href="https://2gis.ru/syktyvkar/search/ЛаСТОчка%2011" target="_blank" rel="noopener">
+        <span class="rating__val">5,0</span>
+        <span class="rating__stars" aria-hidden="true">★★★★★</span>
+        <span class="rating__note">по&nbsp;3&nbsp;оценкам в&nbsp;2ГИС</span>
+      </a>
+    </div>
+
+    <div class="reviews">
+      <figure class="review">
+        <span class="sample">Образец</span>
+        <blockquote>Пригнал машину со&nbsp;стуком в&nbsp;подвеске&nbsp;— до&nbsp;этого в&nbsp;двух местах разводили руками. Здесь нашли за&nbsp;полчаса и&nbsp;поменяли только&nbsp;то, что реально умерло. Цену назвали заранее и&nbsp;не&nbsp;изменили.</blockquote>
+        <figcaption>
+          <b>Алексей&nbsp;М.</b>
+          <span>Hyundai Solaris · стойки стабилизатора</span>
+          <a href="https://2gis.ru/syktyvkar/search/ЛаСТОчка%2011" target="_blank" rel="noopener">Отзыв в&nbsp;2ГИС</a>
+        </figcaption>
+      </figure>
+      <figure class="review">
+        <span class="sample">Образец</span>
+        <blockquote>Делали ТО&nbsp;и&nbsp;меняли колодки. Показали старые детали, объяснили, что ещё поездит, а&nbsp;что менять сейчас. Приятно, когда не&nbsp;пытаются продать лишнее.</blockquote>
+        <figcaption>
+          <b>Ирина&nbsp;К.</b>
+          <span>Kia Rio · ТО&nbsp;и&nbsp;тормоза</span>
+          <a href="https://vk.com/lastochkasto" target="_blank" rel="noopener">Отзыв во&nbsp;ВКонтакте</a>
+        </figcaption>
+      </figure>
+      <figure class="review">
+        <span class="sample">Образец</span>
+        <blockquote>Пропадала зарядка. Провозились дольше, чем рассчитывали, но&nbsp;счёт остался тем, о&nbsp;котором договорились. Вернусь.</blockquote>
+        <figcaption>
+          <b>Дмитрий&nbsp;Р.</b>
+          <span>Lada Vesta · генератор</span>
+          <a href="https://2gis.ru/syktyvkar/search/ЛаСТОчка%2011" target="_blank" rel="noopener">Отзыв в&nbsp;2ГИС</a>
+        </figcaption>
+      </figure>
+    </div>
+
+    <!-- Антикоррозийная обработка: одна арка до и после, сравнение перетягиванием.
+         Оба снимка одного размера и ракурса, иначе при сдвиге детали разъедутся -->
+    <div class="ba">
+      <div class="ba__text">
+        <h3 class="h3">Антикоррозийная обработка</h3>
+        <p>Кроме ремонта, делаем антикоррозийную обработку. На&nbsp;фото&nbsp;— колёсная арка до&nbsp;и&nbsp;после: металл и&nbsp;швы закрыты сплошным защитным слоем, до&nbsp;которого не&nbsp;доберутся соль и&nbsp;сырость.</p>
+        <p class="ba__hint">Потяните ползунок, чтобы сравнить</p>
+      </div>
+      <div class="ba__frame" data-ba>
+        <img class="ba__img ba__img--before" src="assets/img/anticor-before.jpg" width="1600" height="698" loading="lazy"
+             alt="Колёсная арка до обработки: голый металл и заводской герметик на швах">
+        <img class="ba__img" src="assets/img/anticor-after.jpg" width="1600" height="698" loading="lazy"
+             alt="Та же арка после антикоррозийной обработки: сплошное чёрное покрытие">
+        <span class="ba__tag ba__tag--before" aria-hidden="true">До</span>
+        <span class="ba__tag ba__tag--after" aria-hidden="true">После</span>
+        <span class="ba__handle" aria-hidden="true"></span>
+        <input class="ba__range" type="range" min="0" max="100" value="50" aria-label="Сравнение до и после: доля снимка «до»">
+      </div>
+    </div>
+
+    <!-- Последние работы — из сообщества ВК (реальные записи) -->
+    <div class="works">
+      <div class="works__head">
+        <h3 class="h3">Последние работы из&nbsp;ВК</h3>
+        <a class="more" href="https://vk.com/lastochkasto" target="_blank" rel="noopener">Все 545&nbsp;записей в&nbsp;сообществе<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <ul class="works__list">
+        <li class="work">
+          <p class="work__car">Hyundai Creta</p>
+          <p class="work__job">Муфта полного привода</p>
+          <p class="work__text">Трещина только появилась&nbsp;— успели заменить до&nbsp;последствий.</p>
+          <a class="work__link" href="https://vk.com/lastochkasto" target="_blank" rel="noopener">Запись в&nbsp;ВК</a>
+        </li>
+        <li class="work">
+          <p class="work__car">Peugeot 206</p>
+          <p class="work__job">Подсветка панели климата</p>
+          <p class="work__text">Заменили лампы подсветки. Мелочь, за&nbsp;которую берутся не&nbsp;везде.</p>
+          <a class="work__link" href="https://vk.com/lastochkasto" target="_blank" rel="noopener">Запись в&nbsp;ВК</a>
+        </li>
+        <li class="work">
+          <p class="work__car">Kia Sportage</p>
+          <p class="work__job">Чехлы на&nbsp;креслах</p>
+          <p class="work__text">Обновили чехлы&nbsp;— довели до&nbsp;ума то, что и&nbsp;так ездит.</p>
+          <a class="work__link" href="https://vk.com/lastochkasto" target="_blank" rel="noopener">Запись в&nbsp;ВК</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 5 · ВАША МАШИНА И ТЕХНИКА ═══════════
+     TODO: список марок сверить с мастером -->
+<section class="section fleet" id="fleet">
+  <div class="wrap">
+    <div class="head head--split">
+      <div>
+        <h2 class="h2">«А&nbsp;мою возьмёте?»</h2>
+      </div>
+      <p class="head__lead">Скорее всего, да. Работаем с&nbsp;большинством марок&nbsp;— от&nbsp;отечественных до&nbsp;корейцев, японцев и&nbsp;немцев. Нет вашей в&nbsp;списке&nbsp;— позвоните, скажем честно.</p>
+    </div>
+
+    <ul class="brands">
+      <li>Lada</li><li>УАЗ</li><li>Hyundai</li><li>Kia</li>
+      <li>Toyota</li><li>Nissan</li><li>Mazda</li><li>Mitsubishi</li>
+      <li>Renault</li><li>Peugeot</li><li>Volkswagen</li><li>Škoda</li>
+      <li>Ford</li><li>Chevrolet</li><li>Mercedes-Benz</li><li>BMW</li>
+    </ul>
+
+    <!-- Мототехника — отдельным блоком: в общем списке эта ниша теряется -->
+    <div class="moto">
+      <div class="moto__text">
+        <h3 class="moto__title">Снегоходы, скутеры, квадроциклы</h3>
+        <p>Мототехнику в&nbsp;городе берут немногие. Мы&nbsp;берём круглый год: зимой&nbsp;— снегоходы, в&nbsp;тёплый сезон&nbsp;— квадроциклы и&nbsp;скутеры.</p>
+        <ul class="moto__list">
+          <li>Расконсервация и&nbsp;подготовка к&nbsp;сезону</li>
+          <li>Консервация после сезона</li>
+          <li>Электрика и&nbsp;аккумулятор</li>
+          <li>Двигатель, вариатор, тормоза, подвеска</li>
+        </ul>
+        <button class="btn btn--red" type="button" data-lead="Мототехника: ">Записать мототехнику</button>
+      </div>
+      <img class="moto__photo" src="assets/img/moto-atv-snowmobile.jpg" width="1200" height="559" loading="lazy"
+           alt="Квадроцикл и снегоход Тайга Варяг">
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 6 · ЦЕНЫ · даёт заявки ═══════════
+     TODO: цены, состав работ и время — ориентировочные, сверить с мастером -->
+<section class="section prices" id="prices">
+  <div class="wrap">
+    <div class="head head--split">
+      <div>
+        <h2 class="h2">Сколько стоит ремонт</h2>
+      </div>
+      <p class="head__lead">Цены стоят здесь, а&nbsp;не&nbsp;в&nbsp;конце страницы: знать их&nbsp;заранее&nbsp;— нормально. Точную сумму по&nbsp;вашей машине назовём после диагностики.</p>
+    </div>
+
+    <div class="price-wrap">
+      <table class="price">
+        <thead>
+          <tr><th scope="col">Услуга</th><th scope="col">Цена</th><th scope="col">Что входит</th><th scope="col">Время</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Компьютерная диагностика</th>
+            <td class="price__sum">900&nbsp;₽</td>
+            <td class="price__inc">Считываем ошибки, проверяем датчики и&nbsp;параметры двигателя, объясняем словами. Зачтём в&nbsp;счёт ремонта</td>
+            <td class="price__time">40—60&nbsp;мин</td>
+          </tr>
+          <tr>
+            <th scope="row">Техобслуживание</th>
+            <td class="price__sum"><small>от</small> 1&nbsp;000&nbsp;₽</td>
+            <td class="price__inc">Масло и&nbsp;фильтры, проверка жидкостей, тормозов и&nbsp;подвески. Расходники ваши или наши</td>
+            <td class="price__time">от&nbsp;1&nbsp;часа</td>
+          </tr>
+          <tr>
+            <th scope="row">Подвеска и&nbsp;ходовая</th>
+            <td class="price__sum"><small>от</small> 1&nbsp;500&nbsp;₽</td>
+            <td class="price__inc">Ищем стук на&nbsp;подъёмнике, меняем стойки, рычаги, сайлентблоки, тяги</td>
+            <td class="price__time">от&nbsp;2&nbsp;часов</td>
+          </tr>
+          <tr>
+            <th scope="row">Тормоза</th>
+            <td class="price__sum"><small>от</small> 1&nbsp;200&nbsp;₽</td>
+            <td class="price__inc">Колодки, диски, суппорты, шланги, прокачка всей системы</td>
+            <td class="price__time">от&nbsp;1&nbsp;часа</td>
+          </tr>
+          <tr>
+            <th scope="row">Автоэлектрика</th>
+            <td class="price__sum"><small>от</small> 800&nbsp;₽</td>
+            <td class="price__inc">Аккумулятор, стартер, генератор, поиск обрыва в&nbsp;проводке</td>
+            <td class="price__time">от&nbsp;1&nbsp;часа</td>
+          </tr>
+          <tr>
+            <th scope="row">Двигатель</th>
+            <td class="price__sum price__sum--diag">после диагностики</td>
+            <td class="price__inc">От&nbsp;замены цепи и&nbsp;прокладок до&nbsp;капитального ремонта</td>
+            <td class="price__time">от&nbsp;1&nbsp;дня</td>
+          </tr>
+          <tr>
+            <th scope="row">Коробка передач</th>
+            <td class="price__sum price__sum--diag">после диагностики</td>
+            <td class="price__inc">Масло в&nbsp;АКПП и&nbsp;МКПП, сцепление, ремонт механики</td>
+            <td class="price__time">от&nbsp;1&nbsp;дня</td>
+          </tr>
+          <tr>
+            <th scope="row">Мото, скутеры, квадроциклы</th>
+            <td class="price__sum price__sum--diag">после диагностики</td>
+            <td class="price__inc">Расконсервация, электрика, двигатель, подвеска</td>
+            <td class="price__time">от&nbsp;2&nbsp;часов</td>
+          </tr>
+          <tr>
+            <th scope="row">Проверка перед покупкой</th>
+            <td class="price__sum"><small>от</small> 2&nbsp;500&nbsp;₽</td>
+            <td class="price__inc">Кузов, подвеска, двигатель, электроника&nbsp;— и&nbsp;честный вердикт до&nbsp;сделки</td>
+            <td class="price__time">1,5—2&nbsp;часа</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="prices__foot">
+      <div class="why">
+        <h3 class="h3">Почему «от», а&nbsp;не&nbsp;точная цифра</h3>
+        <p>Одна и&nbsp;та&nbsp;же работа на&nbsp;разных машинах стоит по-разному. На&nbsp;одной болт выкручивается за&nbsp;минуту, на&nbsp;другой прикипел и&nbsp;тянет за&nbsp;собой соседние детали. Поэтому в&nbsp;таблице&nbsp;— нижняя граница, а&nbsp;точная сумма появляется, когда мастер увидел вашу машину.</p>
+      </div>
+      <div class="promise">
+        <p class="promise__text">Итоговую сумму называем после диагностики и&nbsp;до&nbsp;начала работ. Без вашего согласия она не&nbsp;меняется</p>
+        <button class="btn btn--red" type="button" data-lead="Хочу узнать цену ремонта">Узнать цену своего ремонта</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ 7 · «А ЕСЛИ…» · даёт заявки ═══════════
+     TODO: условия гарантии и работы со своими запчастями сверить с мастером -->
+<section class="section faq" id="faq">
+  <div class="wrap faq__grid">
+    <div class="head faq__head">
+      <h2 class="h2">А&nbsp;если…</h2>
+      <p class="head__lead">То, что обычно неловко спросить по&nbsp;телефону.</p>
+      <button class="btn btn--dark" type="button" data-lead="Вопрос мастеру: ">Спросить мастера</button>
+    </div>
+
+    <div class="faq__list">
+      <details class="qa" open>
+        <summary>А&nbsp;если сломается снова?</summary>
+        <p>На&nbsp;работу даём гарантию год. Если поломка связана с&nbsp;нашим ремонтом, исправим за&nbsp;свой счёт. Если сломалось другое&nbsp;— сначала покажем, что именно, и&nbsp;только потом предложим ремонт.</p>
+      </details>
+      <details class="qa">
+        <summary>А&nbsp;если цена вырастет по&nbsp;ходу?</summary>
+        <p>Без вас&nbsp;— не&nbsp;вырастет. Сумму называем до&nbsp;начала работ. Если по&nbsp;ходу нашли что-то новое, останавливаемся, звоним, показываем и&nbsp;ждём вашего решения.</p>
+      </details>
+      <details class="qa">
+        <summary>А&nbsp;если у&nbsp;меня свои запчасти?</summary>
+        <p>Поставим. Если деталь вызывает сомнения, скажем об&nbsp;этом до&nbsp;установки. Гарантия в&nbsp;этом случае&nbsp;— на&nbsp;нашу работу, а&nbsp;на&nbsp;саму деталь её&nbsp;даёт продавец.</p>
+      </details>
+      <details class="qa">
+        <summary>А&nbsp;если машина нужна завтра утром?</summary>
+        <p>Скажите об&nbsp;этом при записи. Успеваем&nbsp;— сделаем к&nbsp;утру. Не&nbsp;успеваем&nbsp;— предупредим сразу, а&nbsp;не&nbsp;утром, когда вы&nbsp;уже приехали.</p>
+      </details>
+      <details class="qa">
+        <summary>А&nbsp;если ремонт вообще не&nbsp;нужен?</summary>
+        <p>Так и&nbsp;скажем. Бывает, что стук&nbsp;— это домкрат, который катается в&nbsp;багажнике. Лишнего не&nbsp;продаём: заплатите только за&nbsp;диагностику.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════ 8 · О МАСТЕРЕ ═══════════
+     TODO: причину, почему мастер ушёл от дилеров, сверить с ним самим -->
+<section class="section master" id="master">
+  <div class="wrap master__grid">
+    <figure class="master__photo">
+      <img src="assets/img/hero-master.jpg" width="1536" height="1024" loading="lazy"
+           alt="Мастер ЛаСТОчки11 в фирменной кепке у машины с открытым капотом">
+      <p class="years"><b>20+</b><span>лет под&nbsp;капотом</span></p>
+    </figure>
+
+    <div class="master__text">
+      <h2 class="h2">Машину принимает и&nbsp;отдаёт один мастер</h2>
+      <p class="master__lead">Андрей&nbsp;— больше двадцати лет в&nbsp;ремонте. Начинал у&nbsp;официальных дилеров: там учат работать по&nbsp;регламенту и&nbsp;не&nbsp;пропускать мелочей.</p>
+      <p>Своё дело открыл, чтобы работать без плана продаж: не&nbsp;менять узел целиком, когда хватает одной детали, и&nbsp;не&nbsp;продавать то, без чего машина проедет ещё год. Приёмщика между вами и&nbsp;мастером нет&nbsp;— про стук вы&nbsp;рассказываете тому, кто будет его искать.</p>
+
+      <figure class="gift">
+        <img class="gift__photo" src="assets/img/gift-wrench.jpg" width="1200" height="364" loading="lazy"
+             alt="Шоколадный разводной ключ с гайкой в подарочной упаковке">
+        <figcaption><b>Подарок из&nbsp;Кирова.</b> В&nbsp;благодарность клиенты привезли нам шоколадный гаечный ключ. Пост про него есть в&nbsp;<a href="https://vk.com/lastochkasto" target="_blank" rel="noopener">нашем ВК</a>.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════ 9 · КОНТАКТЫ И ЗАЯВКА · даёт заявки ═══════════ -->
+<section class="section contact" id="contact">
+  <div class="wrap contact__grid">
+    <div class="contact__info">
+      <h2 class="h2">Приезжайте на&nbsp;Школьную,&nbsp;51</h2>
+      <p class="status status--big" data-status><i></i><span>Открыто до&nbsp;19:00</span></p>
+
+      <dl class="clist">
+        <div>
+          <dt>Адрес</dt>
+          <!-- Если появится ориентир («въезд со двора», «за магазином…») — вписать строкой ниже адреса -->
+          <dd>Сыктывкар, ул.&nbsp;Школьная,&nbsp;51</dd>
+        </div>
+        <div>
+          <dt>Часы работы</dt>
+          <!-- TODO: уточнить график -->
+          <dd>Пн—Пт 9:00—19:00<br>Сб 10:00—16:00<br>Вс&nbsp;— выходной</dd>
+        </div>
+        <div>
+          <dt>Телефоны</dt>
+          <dd><a class="clist__tel" href="tel:+79042723147">+7&nbsp;(904)&nbsp;272‑31‑47</a>
+            <a class="clist__tel clist__tel--city" href="tel:+78212352000">35‑20‑00 <small>городской</small></a></dd>
+        </div>
+      </dl>
+
+      <!-- MAX — профиль Андрея Игнатова, проверен 16.09. WhatsApp убран по просьбе заказчика -->
+      <div class="messengers">
+        <a class="btn btn--line-dark btn--sm" href="https://vk.com/lastochkasto" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>ВКонтакте</a>
+        <a class="btn btn--line-dark btn--sm" href="https://max.ru/u/f9LHodD0cOIJ9ZSahhIbPa5X90XvUbkh4YxILdLFB1wemflQSOoruJayHwI" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>MAX</a>
+      </div>
+
+      <!-- Карта. На сайте скрипт подгружает виджет Яндекса поверх заглушки,
+           в однофайловой версии остаётся заглушка со ссылками -->
+      <div class="map" data-map="https://yandex.ru/map-widget/v1/?mode=search&amp;text=%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C%2051&amp;z=16">
+        <div class="map__stub">
+          <svg class="map__pin" aria-hidden="true"><use href="#i-pin"/></svg>
+          <p class="map__addr">Сыктывкар, ул.&nbsp;Школьная,&nbsp;51</p>
+        </div>
+      </div>
+      <p class="map__links">
+        <a class="more" href="https://yandex.ru/maps/?text=%D0%A1%D1%8B%D0%BA%D1%82%D1%8B%D0%B2%D0%BA%D0%B0%D1%80%2C%20%D1%83%D0%BB%D0%B8%D1%86%D0%B0%20%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2C%2051" target="_blank" rel="noopener">Маршрут в&nbsp;Яндекс Картах<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="more" href="https://2gis.ru/syktyvkar/search/%D0%A8%D0%BA%D0%BE%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%2051" target="_blank" rel="noopener">В&nbsp;2ГИС<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </p>
+    </div>
+
+    <form class="form js-lead-form" novalidate>
+            <h3 class="form__title">Перезвоним и&nbsp;запишем</h3>
+      <p class="form__sub">Обязателен только телефон. Остальное уточним в&nbsp;разговоре</p>
+
+      <div class="field">
+        <label for="cName">Имя</label>
+        <input id="cName" name="name" type="text" autocomplete="name">
+      </div>
+      <div class="field">
+        <label for="cPhone">Телефон</label>
+        <input id="cPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+        <span class="field__err" data-err></span>
+      </div>
+      <div class="field">
+        <label for="cMsg">Что беспокоит</label>
+        <textarea id="cMsg" name="message" rows="3" placeholder="Например: стучит спереди справа на кочках"></textarea>
+      </div>
+
+      <label class="check">
+        <input type="checkbox" name="agree" required>
+        <span>Согласен на&nbsp;<button class="link" type="button" data-consent>обработку персональных данных</button></span>
+      </label>
+      <span class="field__err" data-err="agree"></span>
+
+      <button class="btn btn--red btn--block" type="submit">Отправить заявку</button>
+      <p class="form__status" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ─────────── 10 · ПОДВАЛ ─────────── -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="band">
+      <div>
+        <p class="band__title">Стучит, горит, не&nbsp;заводится?</p>
+        <p class="band__text">Позвоните&nbsp;— скажем, что делать дальше</p>
+      </div>
+      <a class="btn btn--light" href="tel:+79042723147"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>+7&nbsp;(904)&nbsp;272‑31‑47</a>
+    </div>
+
+    <div class="footer__cols">
+      <div class="footer__brand">
+        <img src="assets/img/logo-full.png" width="760" height="713" loading="lazy" alt="ЛаСТОчка 11 — автомастерская">
+        <p>Заезжай ползком, уезжай летя</p>
+      </div>
+      <div>
+        <h3 class="footer__h">Контакты</h3>
+        <p><a href="tel:+79042723147">+7&nbsp;(904)&nbsp;272‑31‑47</a><br><a href="tel:+78212352000">35‑20‑00</a>&nbsp;— городской</p>
+        <p>Сыктывкар, ул.&nbsp;Школьная,&nbsp;51</p>
+      </div>
+      <div>
+        <h3 class="footer__h">Часы работы</h3>
+        <p>Пн—Пт 9:00—19:00<br>Сб 10:00—16:00<br>Вс&nbsp;— выходной</p>
+        <p class="status status--dark" data-status><i></i><span>Открыто до&nbsp;19:00</span></p>
+      </div>
+      <div>
+        <h3 class="footer__h">Реквизиты</h3>
+        <p>ИП&nbsp;Игнатов Андрей Иванович<br>ИНН&nbsp;111801015183<br>ОГРНИП&nbsp;323110000011046</p>
+        <p><button class="link link--dark" type="button" data-consent>Согласие на&nbsp;обработку персональных данных</button></p>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <span>©&nbsp;<span data-year>2026</span> ЛаСТОчка11</span>
+      <a href="#hero">Наверх&nbsp;↑</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ─────────── НИЖНЯЯ ПОЛОСА НА ТЕЛЕФОНЕ · видна всегда ─────────── -->
+<nav class="dock" aria-label="Быстрая связь">
+  <a class="dock__btn dock__btn--red" href="tel:+79042723147"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Позвонить</a>
+  <!-- MAX — профиль Андрея Игнатова -->
+  <a class="dock__btn" href="https://max.ru/u/f9LHodD0cOIJ9ZSahhIbPa5X90XvUbkh4YxILdLFB1wemflQSOoruJayHwI" target="_blank" rel="noopener"><svg class="ico" aria-hidden="true"><use href="#i-chat"/></svg>Макс</a>
+  <button class="dock__btn" type="button" data-lead><svg class="ico" aria-hidden="true"><use href="#i-form"/></svg>Заявка</button>
+</nav>
+
+
+<!-- ─────────── ОКНО ЗАЯВКИ ───────────
+     Открывается любой кнопкой с data-lead; текст атрибута вписывается в «Что беспокоит» -->
+<dialog class="modal" id="lead" aria-labelledby="leadTitle">
+  <form class="form js-lead-form" novalidate>
+    <button class="modal__close" type="button" data-close aria-label="Закрыть"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+        <h2 class="form__title" id="leadTitle">Перезвоним и&nbsp;запишем</h2>
+    <p class="form__sub">Обязателен только телефон. Остальное уточним в&nbsp;разговоре</p>
+
+    <div class="field">
+      <label for="lName">Имя</label>
+      <input id="lName" name="name" type="text" autocomplete="name">
+    </div>
+    <div class="field">
+      <label for="lPhone">Телефон</label>
+      <input id="lPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+      <span class="field__err" data-err></span>
+    </div>
+    <div class="field">
+      <label for="lMsg">Что беспокоит</label>
+      <textarea id="lMsg" name="message" rows="3" placeholder="Например: стучит спереди справа на кочках"></textarea>
+    </div>
+
+    <label class="check">
+      <input type="checkbox" name="agree" required>
+      <span>Согласен на&nbsp;<button class="link" type="button" data-consent>обработку персональных данных</button></span>
+    </label>
+    <span class="field__err" data-err="agree"></span>
+
+    <button class="btn btn--red btn--block" type="submit">Отправить заявку</button>
+    <p class="form__status" role="status" aria-live="polite"></p>
+  </form>
+</dialog>
+
+<!-- TODO: текст согласия сверить с юристом -->
+<dialog class="modal modal--doc" id="consent" aria-labelledby="consentTitle">
+  <div class="doc">
+    <button class="modal__close" type="button" data-close aria-label="Закрыть"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button>
+    <h2 class="doc__title" id="consentTitle">Согласие на&nbsp;обработку персональных данных</h2>
+    <p>Отправляя заявку, вы&nbsp;соглашаетесь, что ИП&nbsp;Игнатов Андрей Иванович (ИНН&nbsp;111801015183, ОГРНИП&nbsp;323110000011046), Сыктывкар, ул.&nbsp;Школьная,&nbsp;51, обработает ваши имя, телефон и&nbsp;описание неисправности, чтобы перезвонить и&nbsp;записать на&nbsp;ремонт.</p>
+    <p>Данные не&nbsp;передаются третьим лицам и&nbsp;хранятся до&nbsp;достижения цели обработки. Отозвать согласие можно в&nbsp;любой момент: позвоните по&nbsp;номеру +7&nbsp;(904)&nbsp;272‑31‑47 или напишите в&nbsp;сообщество ВКонтакте.</p>
+    <p class="doc__note">Черновик: текст стоит сверить с&nbsp;юристом.</p>
+  </div>
+</dialog>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
